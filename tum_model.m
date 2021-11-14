@@ -1,4 +1,4 @@
-function [f, g, p, t] = tum_model(delta_vec, tau_vec, kappa, params)
+function [f, g, p, t] = tum_model(delta_vec, tau_vec, params)
 
     dt = params.dt;
     T  = params.T;

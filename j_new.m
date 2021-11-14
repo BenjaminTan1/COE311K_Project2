@@ -7,7 +7,7 @@ function j_new = j_new(delta_tau_vec, params, tum)
 
 [f, g, p, t] = tum(delta_tau_vec);
 
-delta_vec = delta_tau_vec(1, 4);
+delta_vec = delta_tau_vec(1:4);
 
 toxic_effects=sum(delta_vec.^2);                %first term of Jnew
 cellPopulation1=params.a*g(end);                   %second term - index last time value (T)
